@@ -18,7 +18,7 @@
           <a
             href="https://haberserhii.github.io/goit-home-work-04/ "
             style="color: #38bdae; text-decoration: none"
-            >Homework #03 (click)</a
+            >Homework #04 (click)</a
           >
         </li>
       </ul>
