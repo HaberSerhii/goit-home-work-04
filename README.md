@@ -13,10 +13,10 @@
       <h3 align="left" style="color: #70a5fd">Full Stack Developer</h3>
       <ul style="color: #bf91f3">
         <li><span style="color: #38bdae">HTML/CSS.</span></li>
-        <li><span style="color: #38bdae">Module 3. Block model. Flexbox</span></li>
+        <li><span style="color: #38bdae">Module 4. Decorative effects and elements. Vector graphics.</span></li>
         <li>
           <a
-            href="https://haberserhii.github.io/goit-home-work-03/ "
+            href="https://haberserhii.github.io/goit-home-work-04/ "
             style="color: #38bdae; text-decoration: none"
             >Homework #03 (click)</a
           >
