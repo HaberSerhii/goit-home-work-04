@@ -245,6 +245,7 @@ p {
 }
 
 .hero-section {
+  max-width: 1440px;
   padding: 188px 0;
   text-align: center;
   background-image: linear-gradient(
@@ -252,7 +253,9 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/office.jpg);
+    url(../images/img-name.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -278,6 +281,10 @@ p {
 }
 
 .features-item-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
   padding: 24px 100px;
   background: var(--light-color);
   border-radius: 4px;
@@ -314,7 +321,6 @@ p {
 
 .team-section {
   padding: 120px 0px;
-  margin-bottom: 120px;
   background-color: var(--light-color);
 }
 
@@ -330,7 +336,7 @@ p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 32px 16px;
+  padding: 32px 0;
   gap: 8px;
 }
 
@@ -339,41 +345,51 @@ p {
   flex-direction: column;
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--white-background-color);
 }
 
 .team-social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 24px;
 }
 
-.team-social-item {
+/* .team-social-item {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .team-social-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
 }
 
-.team-social-link:hover {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: var(--pressed-state-color);
 }
 
 .team-social-icon {
   width: 16px;
   height: 16px;
+  fill: var(--light-color);
 }
 
 /* Customers section */
 
 .customers-section {
-  margin-bottom: 120px;
+  padding: 120px 0;
+}
+
+.customer-title {
+  line-height: 1.1;
 }
 
 .customer-list {
@@ -386,15 +402,24 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 168px;
-  height: 88px;
+  width: 100%;
+  height: 100%;
   padding: 16px 32px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+  color: var(--subtle-text-color);
 }
 
-.customer-link:hover {
-  fill: var(--pressed-state-color);
+.customer-link:hover,
+.customer-link:focus {
+  color: var(--pressed-state-color);
+  border-color: var(--pressed-state-color);
+}
+
+.customer-icon {
+  width: 104px;
+  height: 56px;
+  fill: currentColor;
 }
 
 /* Portfolio section */
@@ -437,6 +462,8 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-apps-list {
@@ -451,13 +478,17 @@ p {
   width: calc((100% - 48px) / 3);
 }
 
+.apps-link {
+  display: block;
+}
+
 .portfolio-card-content {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
   border-top: none;
 }
 
-.apps-list-items:hover {
+.apps-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
