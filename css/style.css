@@ -249,7 +249,6 @@ p {
   padding: 188px 0;
   text-align: center;
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -356,11 +355,10 @@ p {
   gap: 24px;
 }
 
-/* .team-social-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
+.team-social-item {
+  width: 40px;
+  height: 40px;
+}
 
 .team-social-link {
   display: flex;
