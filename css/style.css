@@ -482,6 +482,12 @@ p {
   display: block;
 }
 
+.apps-link:hover,
+.apps-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-card-content {
   padding: 32px 16px;
   border: 1px solid var(--accent-color);
@@ -508,6 +514,7 @@ p {
 
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text-container {
@@ -554,16 +561,20 @@ p {
 
 .footer-social-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
-  background-color: transparent;
+  background-color: var(--primary-brand-color);
   border-radius: 50%;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--success-color);
 }
 
 .footer-social-icon {
-  width: 16px;
-  height: 16px;
+  fill: var(--light-color);
+  width: 24px;
+  height: 24px;
 }
