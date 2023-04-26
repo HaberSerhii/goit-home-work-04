@@ -408,6 +408,7 @@ p {
   padding: 16px 32px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+  color: var(--subtle-text-color);
 }
 
 .customer-link:hover,
