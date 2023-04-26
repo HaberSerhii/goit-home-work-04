@@ -421,6 +421,11 @@ p {
   fill: currentColor;
 }
 
+.customer-icon:hover,
+.customer-icon:focus {
+  fill: var(--pressed-state-color);
+}
+
 /* Portfolio section */
 
 .portfolio-section {
